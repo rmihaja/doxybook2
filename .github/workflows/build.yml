@@ -173,8 +173,8 @@ jobs:
           omitBodyDuringUpdate: true
           omitNameDuringUpdate: true
           prerelease: false
-          token: ${{ secrets.GITHUB_TOKEN }}
-  
+          token: ${{ secrets.GH_TOKEN }}
+
   pages:
     name: Pages
     needs: [build]
