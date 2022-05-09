@@ -162,7 +162,7 @@ jobs:
           cat changelog.txt
 
       - name: Release
-        if: startsWith(github.ref, 'refs/tags/v')
+        uses: ncipollo/release-action@v1
         with:
           artifacts: ${{ steps.create_artifact.outputs.path }}
           allowUpdates: true
